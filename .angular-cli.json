@@ -20,6 +20,7 @@
       "prefix": "app",
       "styles": [
         "../node_modules/foundation/scss/foundation.scss",
+        "../node_modules/foundation/scss/normalize.scss",
         "styles.scss"
       ],
       "scripts": [
