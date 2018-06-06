@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
         const jsonResponse = await response.json();
         console.log('good user!!!');
         console.log(jsonResponse);
-        this.title = JSON.stringify(jsonResponse);
+        // this.title = JSON.stringify(jsonResponse);
         return jsonResponse;
       }
     } catch (error) {
