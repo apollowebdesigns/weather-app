@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as _ from 'lowdash';
 
 @Component({
   selector: 'app-main',
