@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
 
-![alt text](https://raw.githubusercontent.com/apollowebdesigns/pi-weather-app/master/image/sense.JPG)
+![alt text](https://raw.githubusercontent.com/apollowebdesigns/weather-app/master/image/sense.JPG)
 
 ## Useful info
 
