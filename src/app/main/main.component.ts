@@ -7,13 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
   data = '';
+  flatTemp = '';
 
   async getData() {
     try {
       const response = await fetch('https://us-central1-userddata.cloudfunctions.net/helloWorld/weatherdata');
       if (response.ok) {
-        const jsonResponse = await response.json();
+        let jsonResponse = await response.json();
+        jsonResponse = Object.values(jsonResponse);
         this.data = JSON.stringify(jsonResponse);
+        this.flatTemp = jsonResponse[jsonResponse.length - 1];
         return jsonResponse;
       }
     } catch (error) {

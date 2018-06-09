@@ -15,9 +15,6 @@ export class AppComponent implements OnInit {
       const response = await fetch('https://us-central1-userddata.cloudfunctions.net/helloWorld/weatherdata');
       if (response.ok) {
         const jsonResponse = await response.json();
-        console.log('good user!!!');
-        console.log(jsonResponse);
-        // this.title = JSON.stringify(jsonResponse);
         return jsonResponse;
       }
     } catch (error) {
